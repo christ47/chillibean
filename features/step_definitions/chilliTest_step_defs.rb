@@ -17,10 +17,6 @@ When("I enter the incorrect login credentials") do
   chillibeanLoginPage.clickLoginButton
 end
 
-When("I click I understand") do
-  chillibeanLoginPage.clickIUnderstandButton
-end
-
 Then("I see an error message for the incorrect password") do
   expect(page.should have_css('div', class: "error", text: "Incorrect email or password"))
 end

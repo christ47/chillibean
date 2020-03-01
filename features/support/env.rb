@@ -10,7 +10,6 @@ RSpec.configure do |config|
 
   Capybara.register_driver(:chrome) do |app|
     Capybara::Selenium::Driver.new(app, :browser => :chrome)
-    # Capybara::Selenium::Driver.new(app, browser: :chrome, args: ['--incognito'])
   end
 
 Capybara.configure do |config|

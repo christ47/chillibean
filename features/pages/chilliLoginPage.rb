@@ -1,7 +1,5 @@
 require 'capybara/dsl'
 
-# The Username and/or Passcode you entered does not match our records. If it exists, this account has been locked. Please check the associated email or click Forgotten your password
-
 class ChillibeanLoginPage
     include Capybara::DSL
 
@@ -30,7 +28,4 @@ class ChillibeanLoginPage
         find(:css, '[value="Sign in"]').click
     end
 
-    def clickIUnderstandButton
-        find('button', text: "I understand").click
-    end
 end
